@@ -9,10 +9,10 @@ import { SiKofi } from "react-icons/si";
 function SideNav() {
   return (
     <div>
-      <div className="px-2 w-60 h-screen bg-gradient-to-b from-emerald-300 via-sky-400 to-fuchsia-400 z-10 flex-col justify-between flex-shrink-0 fixed top-0-left-96 overflow-y-auto max-h-screen lg:w-[15.5rem] lg:px-8 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
-        <div className="px-6 py-4 w-60 h-screen bg-gradient-to-b from-zinc-800 to-zinc-900 z-20 flex-col justify-between flex-shrink-0 fixed top-0-left-96 overflow-y-auto max-h-screen  lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
-          <div className="flex flex-col text-white text-xl ">
-            <a href="/">
+      <div className="px-2 w-60 h-screen bg-gradient-to-b from-emerald-300 via-sky-400 to-fuchsia-400 z-10 flex-col justify-between flex-shrink-0 fixed top-0-left-96 max-h-screen lg:w-[15.5rem] lg:px-8 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+        <div className="px-6 py-4 w-60 h-screen bg-gradient-to-b from-zinc-800 to-zinc-900 z-20 flex-col justify-between flex-shrink-0 fixed top-0-left-96 max-h-screen  lg:w-60 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+          <div className="flex flex-col text-white text-base ">
+            <a href="/" className="max-w-32 h-auto m-auto">
               {" "}
               <Image
                 width={500}

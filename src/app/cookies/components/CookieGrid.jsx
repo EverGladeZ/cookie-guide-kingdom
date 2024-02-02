@@ -44,7 +44,7 @@ function sortCookies(json) {
 function CookieGrid({ data }) {
   return (
     <div className="ml-60">
-      <div className="p-56 pt-[2rem] flex flex-wrap justify-center">
+      <div className="p-1/4 pt-[2rem] flex flex-wrap justify-center">
         {" "}
         {sortCookies(data).map((cookie) => {
           return (
