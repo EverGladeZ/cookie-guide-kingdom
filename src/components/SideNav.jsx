@@ -4,6 +4,7 @@ import { TbCookieMan, TbHome } from "react-icons/tb";
 import { GiPodium, GiBattleGear } from "react-icons/gi";
 import { FaEarthAmericas, FaYoutube } from "react-icons/fa6";
 import { LuSwords } from "react-icons/lu";
+import { SiKofi } from "react-icons/si";
 
 function SideNav() {
   return (
@@ -23,50 +24,56 @@ function SideNav() {
 
             <a
               href="/"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <TbHome className="h-6 w-6 mr-2 object-contain" /> Home
             </a>
 
             <a
               href="/cookies"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <TbCookieMan className="h-6 w-6 mr-2 object-contain" /> Cookies
             </a>
 
             <a
               href="/tier-list"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg relative"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg relative"
             >
               <GiPodium className="h-6 w-6 mr-2 object-contain" />
               Tier Lists
             </a>
             <a
               href="/"
-              className="relative flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="relative flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <GiBattleGear className="h-6 w-6 mr-2 object-contain" /> Guild
               Battle
             </a>
             <a
               href="/"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <FaEarthAmericas className="h-6 w-6 mr-2 object-contain" /> PvE
               Teams
             </a>
             <a
               href="/"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <LuSwords className="h-6 w-6 mr-2 object-contain" /> PvP Teams
             </a>
             <a
               href="/"
-              className="flex items-center my-1 py-2 px-3 hover:bg-zinc-700 transition-all rounded-lg"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg"
             >
               <FaYoutube className="h-6 w-6 mr-2 object-contain" /> Video Guides
+            </a>
+            <a
+              href="https://ko-fi.com/cookie_guide_kingdom"
+              className="flex items-center my-1 py-4 px-3 hover:bg-zinc-700 transition-all rounded-lg align-bottom text-base"
+            >
+              <SiKofi className="h-6 w-6 mr-2 object-contain" /> Support on KoFi
             </a>
           </div>
         </div>
