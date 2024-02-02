@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function getBGColour(cookie) {
   if (cookie == "Ancient") {
-    return "from-purple-600 to-fuchsia-500";
+    return "from-slate-900 to-fuchsia-600";
   } else if (cookie == "Legendary") {
     return "from-cyan-500 to-lime-500";
   } else if (cookie == "Super Epic") {
