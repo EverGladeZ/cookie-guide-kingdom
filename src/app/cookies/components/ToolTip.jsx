@@ -53,8 +53,7 @@ function ToolTip({ children, cookie }) {
                   <div key={`${cookie.name}` + "-" + `${type}`}>
                     <div>
                       <Image
-                        src={`/assets/images/elements/${type}.png`}
-                        unoptimized="true"
+                        src={`/assets/images/elements/${type.toLowerCase()}.png`}
                         width={66}
                         height={66}
                         alt={`${type}`}

@@ -454,7 +454,7 @@
       "rarity": "Epic",
       "class": "Charge",
       "location": "Front",
-      "type": [["Normal"]],
+      "type": ["Normal"],
       "skill": {
         "name": "Purple Tornado",
         "description": "Ravages the battlefield in a deadly Purple Tornado, causing substantial periodic area damage. While Purple Yam Cookie is using his skill, he will briefly become resistant to interrupting effects.",
