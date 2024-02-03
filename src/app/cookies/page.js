@@ -15,7 +15,7 @@ export default function Cookies() {
     <div>
       <div>
         <SideNav />
-        <h1 className="ml-60 text-white text-[3rem] text-center pt-[5rem]">All Cookies</h1>
+        <h1 className="ml-60 text-white text-[3rem] text-center pt-[8rem]">All Cookies</h1>
         <CookieGrid data={cookies.cookies} />
       </div>
     </div>

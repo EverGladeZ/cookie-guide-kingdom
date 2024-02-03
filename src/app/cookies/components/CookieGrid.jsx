@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ToolTip from "./ToolTip";
 
 function getBGColour(cookie) {
   if (cookie == "Ancient") {
@@ -44,7 +45,7 @@ function sortCookies(json) {
 function CookieGrid({ data }) {
   return (
     <div className="ml-60">
-      <div className="p-1/4 pt-[2rem] flex flex-wrap justify-center">
+      <div className="p-1/4 pt-[4rem] flex flex-wrap justify-center">
         {" "}
         {sortCookies(data).map((cookie) => {
           return (
@@ -54,31 +55,35 @@ function CookieGrid({ data }) {
                 cookie.rarity
               )} w-56 h-56`}
             >
-              <div className="hover:scale-110 transition ease-in-out cursor-pointer">
-                {" "}
-                <div
-                  className={`${cookie.rarity.toLowerCase().replace(" ", "-")}`}
-                >
-                  <div className="flex flex-col justify-center">
-                    <Image
-                      src={`/assets/images/cookie-profile/${cookie.name
-                        .normalize("NFD")
-                        .replace(/[\u0300-\u036f]/g, "")
-                        .toLowerCase()
-                        .replace(" cookie", "")
-                        .replace(" ", "_")}.png`}
-                      width={312}
-                      height={312}
-                      alt={`${cookie.name}`}
-                      className="w-full h-auto max-h-52 p-2"
-                    />
-                    <div className="text-white text-wrap text-center text-lg bg-gradient-to-r from-zinc-900 to-zinc-700 relative border-2 -left-0.5 border-white rounded-lg w-56">
-                      {cookie.name}
+              <ToolTip cookie={cookie}>
+                <div className="hover:scale-110 transition ease-in-out cursor-pointer">
+                  {" "}
+                  <div
+                    className={`${cookie.rarity
+                      .toLowerCase()
+                      .replace(" ", "-")}`}
+                  >
+                    <div className="flex flex-col justify-center">
+                      <Image
+                        src={`/assets/images/cookie-profile/${cookie.name
+                          .normalize("NFD")
+                          .replace(/[\u0300-\u036f]/g, "")
+                          .toLowerCase()
+                          .replace(" cookie", "")
+                          .replace(" ", "_")}.png`}
+                        width={312}
+                        height={312}
+                        alt={`${cookie.name}`}
+                        className="w-full h-auto max-h-52 p-2"
+                      />
+                      <div className="text-white text-wrap text-center text-lg bg-gradient-to-r from-zinc-900 to-zinc-700 relative border-2 -left-0.5 border-white rounded-lg w-56">
+                        {cookie.name}
+                      </div>
                     </div>
+                    {/* <img src={`src/assets/images/cookie-profile`}/> */}
                   </div>
-                  {/* <img src={`src/assets/images/cookie-profile`}/> */}
                 </div>
-              </div>
+              </ToolTip>
             </div>
           );
         })}
