@@ -54,6 +54,7 @@ function ToolTip({ children, cookie }) {
                     <div>
                       <Image
                         src={`/assets/images/elements/${type}.png`}
+                        unoptimized="true"
                         width={66}
                         height={66}
                         alt={`${type}`}
